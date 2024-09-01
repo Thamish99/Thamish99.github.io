@@ -5,7 +5,7 @@ const radioButtons = document.querySelectorAll('input[name="commonAngles"]');
 function updateComponents(value) {
     let newvalue;
     if (value<0){
-        newvalue = 0
+        newvalue = Math.abs(value)
     }else if(0 <= value && value <= 360){
         newvalue = value
     }else{
